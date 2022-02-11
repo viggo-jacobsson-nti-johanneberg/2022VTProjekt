@@ -1,1 +1,111 @@
-/* Denna fil skall innehålla din CSS kod */
+body {
+    margin: 0px;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-areas: 
+    'nv'
+    'mn'
+    'ft';
+    grid-template-rows: 10% 70% 20%;
+    min-height: 100vh;
+}
+
+
+.header {
+    grid-area:nv;
+    background-color: #D9CEC1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: #BF9D73 solid 10px;
+}
+
+ 
+
+  
+.navlinks li {
+    list-style: none;
+}
+  
+.navlinks a {
+    color:darkslategrey;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight:bold;
+    font-size: 20px;
+   
+}
+  
+
+  
+ .navlinks {
+  
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 0;
+    height: 70vh;
+    background-color: darkseagreen;
+    align-items: center;
+    width: 40%;
+    transition: all 0.5s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 4px ;
+   
+    }
+
+ .burger div {
+    width: 25px;
+    height:3px;
+    background-color: darkslategrey;
+    margin:5px;
+    border-radius: 25%;
+    transition: all 0.3s;
+
+ }
+  
+ .burger {
+    margin-right: 50px;
+    cursor: pointer;
+ }
+  
+ .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+ }
+  
+ .toggle .line2 {
+    opacity:0;
+ }
+  
+ .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+ }
+  
+  
+ .navActive {
+    transform: translateX(100vh);
+    transition: all 1s;
+}
+ 
+
+#HomeIcon {
+    width: 3em;
+    display: flex;
+}
+
+.main {
+    grid-area: mn;
+    background-color:#F2F2F2;
+}
+
+
+
+.footer {
+    grid-area: ft;
+    background-color: #40342A;
+    border-top: #734F2F solid 10px;
+}
+
