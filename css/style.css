@@ -1,5 +1,8 @@
 body {
     margin: 0px;
+    
+ overflow-x: hidden; /* Hide scrollbars */
+      
 }
 
 #wrapper {
@@ -10,6 +13,7 @@ body {
     'ft';
     grid-template-rows: 10% 70% 20%;
     min-height: 100vh;
+    max-width: 100vw;
 }
 
 
@@ -27,6 +31,7 @@ body {
   
 .navlinks li {
     list-style: none;
+    padding-top: 3em;
 }
   
 .navlinks a {
@@ -38,29 +43,30 @@ body {
    
 }
   
-
   
- .navlinks {
+.navlinks {
   
     display:flex;
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
     right: 0;
-    height: 70vh;
-    background-color: darkseagreen;
+    top: 0;
+    margin-top: 0px;
+    height: 100vh;
+    background-color: #D9CEC1;
     align-items: center;
-    width: 40%;
+    width: 30%;
     transition: all 0.5s;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 4px ;
+    border-left: #BF9D73 solid 10px;
+    
    
     }
 
  .burger div {
     width: 25px;
     height:3px;
-    background-color: darkslategrey;
+    background-color: #40342A;
     margin:5px;
     border-radius: 25%;
     transition: all 0.3s;
@@ -88,6 +94,11 @@ body {
  .navActive {
     transform: translateX(100vh);
     transition: all 1s;
+    position: fixed;
+}
+
+#search {
+    width: 2em;
 }
  
 
