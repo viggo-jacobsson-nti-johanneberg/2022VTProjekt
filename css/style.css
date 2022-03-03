@@ -127,21 +127,23 @@ body {
     grid-area: mn;
     background-color:#EBEDF2;
     display: flex;
-    flex-direction: row;
-    max-height: 75vh;
-    flex-wrap: wrap;
-    max-width: 100vw;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+ 
 }
 .itemdiv {
-    display: flex;
-    flex-direction: row;
-    max-height: 75vh;
-    flex-wrap: wrap;
-    max-width: 100vw;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-areas: 
+    'i1 i2'
+    'i3 i4'
+    'i5 i6'
+    ;
+}
+
+.shopitems {
+   
+    justify-content: center;
 }
 
 #item1 {
@@ -164,9 +166,20 @@ body {
 }
 
 .guitarimages {
-    width: 30%;
+   height: 30vh;
+   justify-content: center;
+   
 }
 
+.productText {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content:center;
+}
+
+.productTextLine {
+    width: 6em;
+}
 
 
 .footer {
