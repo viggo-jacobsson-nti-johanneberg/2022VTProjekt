@@ -1,3 +1,7 @@
+*{
+    @import url(//db.onlinewebfonts.com/c/cfdf18a10f253f0aa9db6db978d328c0?family=SignPainter+HouseScript);
+}
+
 body {
     margin: 0px;
     
@@ -24,6 +28,7 @@ body {
     align-items: center;
     justify-content: space-between;
     border-bottom: #4B50BF solid 10px;
+    
 }
 
  
@@ -36,7 +41,6 @@ body {
 }
   
 .navlinks a {
-    color:darkslategrey;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight:bold;
@@ -60,7 +64,7 @@ body {
     background-color: #ACB0F2;
     width: 20%;
     transition: all 0.5s;
-    border-left: #231773 solid 10px;
+    border-left: #4B50BF solid 10px;
     
    
     }
@@ -122,6 +126,30 @@ body {
     width: 3em;
     display: flex;
 }
+
+#logoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+#logoImage {
+    width: 3em;
+}
+
+
+
+#text {
+font-family: "SignPainter HouseScript"; src: url("//db.onlinewebfonts.com/t/cfdf18a10f253f0aa9db6db978d328c0.eot"); src: url("//db.onlinewebfonts.com/t/cfdf18a10f253f0aa9db6db978d328c0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/cfdf18a10f253f0aa9db6db978d328c0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/cfdf18a10f253f0aa9db6db978d328c0.woff") format("woff"), url("//db.onlinewebfonts.com/t/cfdf18a10f253f0aa9db6db978d328c0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/cfdf18a10f253f0aa9db6db978d328c0.svg#SignPainter HouseScript") format("svg");
+font-size: larger;
+margin-top: 0px;
+margin-bottom: 0px;
+
+}
+    
+
 
 .main {
     grid-area: mn;
@@ -186,5 +214,18 @@ body {
     grid-area: ft;
     background-color: #4B50BF;
     border-top: #231773 solid 10px;
+}
+
+.FootHead {
+    list-style-type: none;
+    padding: 10px;
+    color: #EBEDF2;
+}
+.footeritems {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    margin-left: 20px;
 }
 
