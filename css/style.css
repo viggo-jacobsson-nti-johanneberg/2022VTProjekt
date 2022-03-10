@@ -203,6 +203,7 @@ margin-bottom: 0px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     justify-content:center;
+    font-weight: lighter;
 }
 
 .productTextLine {
