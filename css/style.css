@@ -15,7 +15,7 @@ body {
     'nv'
     'mn'
     'ft';
-    grid-template-rows: 10% auto 20%;
+    grid-template-rows: 10% auto 15;
     min-height: 100vh;
     max-width: 100vw;
 }
@@ -216,16 +216,70 @@ margin-bottom: 0px;
     border-top: #231773 solid 10px;
 }
 
-.FootHead {
+.footHead {
     list-style-type: none;
     padding: 10px;
     color: #EBEDF2;
+    font-size: 20px;
+    
 }
-.footeritems {
+.footerheaders {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     margin-left: 20px;
+    margin-bottom: 0px;
+    
 }
+
+.footsub {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 6em;
+    justify-content: flex-start;
+    top: 10em;
+    color: #c3c5ca;
+    font-size: medium;
+}
+
+
+
+/*-------------------------------------------------------------
+---------------------------------------------------------------*/
+
+
+#wrapper2 {
+    display: grid;
+    grid-template-areas: 
+    'sb'
+    'ib'
+    'ft'
+    ;
+    
+}
+
+#searchbox2 {
+    grid-area: sb;
+    background-color: #ACB0F2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: #4B50BF solid 10px;
+}
+
+.searchtitle {
+ border-bottom: #EBEDF2 3px solid;
+ color: #EBEDF2;
+ margin-left: 20px;
+ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+ 
+}
+
+#itembox2 {
+    grid-area: ib;
+}
+
+
 
