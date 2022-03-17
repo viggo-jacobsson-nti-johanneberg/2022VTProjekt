@@ -147,7 +147,7 @@ margin-bottom: 0px;
 
 .main {
     grid-area: mn;
-    background-color:#EBEDF2;
+    background-color:#ffffff;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -164,33 +164,82 @@ margin-bottom: 0px;
 }
 
 .shopitems {
-   
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 #item1 {
     grid-area: i1;
+    margin-right: 3em;
 }
 #item2 {
     grid-area: i2;
+    margin-left: 3m;
 }
 #item3 {
     grid-area: i3;
+    margin-right: 3em;
 }
 #item4 {
     grid-area: i4;
+    margin-left: 3em;
 }
 #item5 {
     grid-area: i5;
+    margin-right: 3em;
 }
 #item6 {
     grid-area: i6;
+    margin-left: 3em;
 }
 
 .guitarimages {
    height: 30vh;
-   justify-content: center;
-   
+   width: 30vw;
+   align-items: center;  
+   margin-right: 0px;
+}
+
+#g1 {
+    background-image: url(../img/BrownGuitar.jpg);
+    background-size: cover;
+    background-position-x: center;
+    margin: 0;
+    
+}
+
+#g2 {
+    background-image: url(../img/BlueGuitar.jpg);
+    background-size: cover;
+    background-position-x: center;
+    margin: 0;
+}
+#g3 {
+    background-image: url(../img/RedGuitar.jpg);
+    background-size: cover;
+    background-position-x: center;
+    margin: 0;
+}
+#g4 {
+    background-image: url(../img/PurpleGuitar.jpg);
+    background-size: cover;
+    background-position-x: center;
+    margin: 0;
+}
+#g5 {
+    background-image: url(../img/BlackGuitar.jpg);
+    background-size: cover;
+    background-position-x: center;
+    margin: 0;
+}
+#g6 {
+    background-image: url(../img/WhiteGuitar.jpg);
+    background-size: cover;
+    background-position-x: center;
+    margin: 0;
 }
 
 
@@ -265,7 +314,7 @@ margin-bottom: 0px;
 
 #searchbox2 {
     grid-area: sb;
-    background-color: #ACB0F2;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
