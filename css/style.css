@@ -409,7 +409,6 @@ Page 3: Search Result
 }
 
 .resultItems {
-    grid-area: ri;
     display: flex;
 }
 .resultimg {
@@ -434,4 +433,147 @@ Page 3: Search Result
     width: 90vw;
     list-style: none;
     opacity: 30%;
+}
+
+/*-------------------------------------------------------------
+Page 4: Product
+---------------------------------------------------------------*/
+
+#wrapper4 {
+    display: grid;
+    grid-template-areas:
+    'nv'
+    'm4'
+    'ft';
+    grid-template-rows: 10% auto 20vh;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+#HomeIcon4 {
+    width: 50px;
+    padding-left: 1em;
+}
+
+#main4 {
+    grid-area: m4;
+    display: grid;
+    grid-template-areas:
+    'pb pb'
+    'rb rb';
+}
+
+#productbox {
+    grid-area: pb;
+    margin-top: 3em;
+}
+
+#relatedbox {
+    grid-area: rb;
+}
+
+
+.productitems {
+    display: flex;
+}
+.productimg {
+    width: 12em;
+    height: 20em;
+}
+
+.productText4 {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    line-height: 1px;
+    
+}
+
+.producttitle {
+    font-weight: 100;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.productborder {
+    grid-area: hr;
+    height: 0px;
+    width: 90vw;
+    list-style: none;
+    opacity: 30%;
+    margin-top: 2em;
+}
+
+.ProductDesc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#craft {
+    margin-left: 20px;
+}
+
+#type {
+    margin-left: 00px;
+}
+
+#log {
+    margin-left: 3em;
+}
+.logColor {
+    background-color: #976349;
+    width: 2em;
+    height: 2em;
+    border-radius: 40%;
+}
+
+#pricetag {
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+#ogpricebox {
+    background-color:#ACB0F2;
+    border-radius: 10px;
+    border: #4B50BF 1px solid;
+    width: 6em;
+    display: flex;
+    justify-content: center;
+}
+
+#ogpricetag {
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+#saleprice {
+    color: #6E30F2;
+   padding-left: 10px;
+}
+
+#cartbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.cartbutton {
+    background-color:limegreen;
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+    padding: 5px;
+}
+#cartIcon {
+    width: 3em;
+}
+#cartText {
+    margin-left: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
