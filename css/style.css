@@ -1,6 +1,10 @@
+
+html {
+    scroll-behavior: smooth
+}
+
 *{
     @import url(//db.onlinewebfonts.com/c/cfdf18a10f253f0aa9db6db978d328c0?family=SignPainter+HouseScript);
-    
 }
 
 body {
@@ -29,10 +33,19 @@ body {
     align-items: center;
     justify-content: space-between;
     border-bottom: #4B50BF solid 10px;
-    
+    width: 100vw;
+    position: fixed;
 }
 
- 
+#top {
+    background-color: transparent;
+    border: 0;
+    width: 6em;
+
+}
+#HomeIcon {
+    width: 5em;
+}
 
   
 .navlinks li {
@@ -114,14 +127,9 @@ body {
 #cart {
     width: 50px;
 }
- 
 
-#HomeIcon {
-    width: 3em;
-    display: flex;
-}
 
-#logoBox {
+.logoBox {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,7 +137,7 @@ body {
     margin-top: 10px;
 }
 
-#logoImage {
+.logoImage {
     width: 3em;
 }
 
@@ -177,7 +185,7 @@ margin-bottom: 0px;
 }
 #item2 {
     grid-area: i2;
-    margin-left: 3m;
+    margin-left: 3em;
 }
 #item3 {
     grid-area: i3;
@@ -298,6 +306,7 @@ margin-bottom: 0px;
 
 
 /*-------------------------------------------------------------
+Page 2: Search
 ---------------------------------------------------------------*/
 
 
@@ -305,16 +314,16 @@ margin-bottom: 0px;
     display: grid;
     grid-template-areas: 
     'sb'
-    'ib'
+    'm2'
     'ft'
     ;
     grid-template-rows: 10vh auto 20vh;
     min-height: 100vh;
 }
 
-#searchbox2 {
+#navHead2 {
     grid-area: sb;
-    background-color: #ffffff;
+    background-color: #ACB0F2;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -329,9 +338,100 @@ margin-bottom: 0px;
  
 }
 
-#itembox2 {
-    grid-area: ib;
+#main2 {
+    grid-area: m2;
+}
+
+#searchbox {
+background-color:#777eff;
+display: flex;
+align-items: center;
+height: 40px;
+border-radius: 5px;
+padding-left: 3px;
+padding-right: 5px;
+}
+
+.typebox {
+    height: 2em;
+    background-color: #8f93e5;
+    padding-top: 10px;
+    margin-right: 1em;
+    width: 50vw;
+    height: 20px;
+    border: 0px;
+    border-radius: 5px;
+    color: #ffffff;
+    
+}
+
+.SearchButton {
+    background-image: url(../img/search_black_24dp.svg);
+    width: 2em;
+    height: 2em;
+    background-repeat:no-repeat;
+    background-size: 2em;
+    
+    border-radius: 5px;
+}
+
+.logoBox2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin-left: 20px;
 }
 
 
+/*-------------------------------------------------------------
+Page 3: Search Result
+---------------------------------------------------------------*/
 
+#wrapper3 {
+    display: grid;
+    grid-template-areas: 
+    'sb'
+    'm3'
+    'ft'
+    ;
+    grid-template-rows: 10vh auto 20vh;
+    min-height: 100vh;
+}
+
+#main3 {
+    grid-area: m3;
+}
+
+#main3 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.resultItems {
+    grid-area: ri;
+    display: flex;
+}
+.resultimg {
+    width: 8em;
+}
+
+.resultText {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    line-height: 5px;
+}
+
+.resultTitle {
+    font-weight: 100;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.resultBorder {
+    grid-area: hr;
+    height: 0px;
+    width: 90vw;
+    list-style: none;
+    opacity: 30%;
+}
