@@ -37,24 +37,50 @@
                 <section>
                     <div class="productWrap">
                       <div class="productitems">
-                            <img src="./img/BrownGuitar.jpg" class="productimg" alt="resultimage">
+                            <img src="./img/BrownGuitar.jpg" id="productimg" alt="resultimage">
                             <div class="productText4">
                                 <h2 class="producttitle">F Auk - Log</h2>
                                 <section class="ProductDesc"><h3>Size:</h3><p>40 x 25 x 10 cm</p></section>
                                 <section class="ProductDesc"><h3>Craft:</h3><p id="craft">Fender Series 12</p></section>
                                 <section class="ProductDesc"><h3>Type:</h3><p id="type">Acoustic</p></section>
-                                <section class="ProductDesc"><h3>Color:</h3><p id="log">Log</p><div class="logColor"></div></section>
-                                <section id="pricetag"><div id="ogpricebox"><h2 id="ogpricetag">1 450kr</h2></div><h2 id="saleprice">1 190kr</h2></section>
-                                <section id="cartbox"><div class="cartbutton"><img src="./img/add_shopping_cart_white_24dp.svg" id="cartIcon" alt="Add To Cart shape"></div><h2 id="cartText">Add To Cart</h2></section>
+                                <section class="ProductDesc"><h3>Color:</h3>
+                                    <div class="colorboxes" style="max-width:7em;">
+                                    <div class="colorselections" id="logColor" onclick="togglebrown()"></div><div class="colorselections" id="lapiscolor" onclick="toggleblue()"></div><div class="colorselections" id="rubycolor" onclick="togglered()"></div><div class="colorselections" id="plumcolor" onclick="togglepurple()"></div><div class="colorselections" id="shadecolor" onclick="toggleblack()"></div><div class="colorselections" id="lightcolor" onclick="togglewhite()"></div>
+                                </div>
+                                </section>
+                                <hr id="colorboxline">
+                                <section id="pricetag"><div id="ogpricebox"><h2 id="ogpricetag">1 450kr</h2></div><h2 id="saleprice">990kr</h2></section>
+                                <button class="cartedButton" onclick="togglecarted()"><img src="./img/add_shopping_cart_white_24dp.svg" id="cartIcon" alt="Add To Cart shape">Add To Cart</button>
                             </div>
                         </div>
-                        <hr class="productborder">
+                      
                         </div>
                       </section>
-
             </div>
             <div id="relatedbox">
-
+                <a href="productblack.html"><section class="relatedguitar1">
+                    <img id="relatedimg1" src="./img/BlackGuitar.jpg" alt="Related Guitar Shade">
+                    <h3 class="relatedtitle">Shade</h3>
+                    <p class="relatedprice">990kr</p>
+                </section></a>
+                <hr class="relatedboxline">
+                <a href="productpurple.html"><section class="relatedguitar2">
+                    <img id="relatedimg2" src="./img/PurpleGuitar.jpg" alt="Related Guitar Plum">
+                    <h3 class="relatedtitle">Plum</h3>
+                    <p class="relatedprice">990kr</p>
+                </section></a>
+                <hr class="relatedboxline">
+                <a href="productwhite.html"><section class="relatedguitar3">
+                    <img id="relatedimg3" src="./img/WhiteGuitar.jpg" alt="Related Guitar Light">
+                    <h3 class="relatedtitle">Light</h3>
+                    <p class="relatedprice">990kr</p>
+                </section></a>
+                <hr class="relatedboxline">
+                <a href="productred.html"><section class="relatedguitar4">
+                    <img id="relatedimg4" src="./img/RedGuitar.jpg" alt="Related Guitar Ruby">
+                    <h3 class="relatedtitle">Ruby</h3>
+                    <p class="relatedprice">990kr</p>
+                </section></a>
 
 
 
