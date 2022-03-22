@@ -23,6 +23,7 @@ function topFunction() {
 
 function togglecarted() {
    document.getElementById("cartIcon").src = "../img/added_to_cart.svg"
+   document.getElementById("carttext").textContent = "Added To Cart!"
 }
 
 

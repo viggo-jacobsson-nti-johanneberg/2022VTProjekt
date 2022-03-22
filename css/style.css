@@ -639,6 +639,7 @@ Page 4: Product
     width: 3em;
 }
 
+
 #relatedbox {
     grid-area: rb;
     display: flex;
@@ -682,3 +683,115 @@ Page 4: Product
     margin-right: 30px;
 }
 
+
+
+
+/*-------------------------------------------------------------
+Page 5: Cart
+---------------------------------------------------------------*/
+
+#wrapper5 {
+    display: grid;
+    grid-template-areas: 
+    'nv'
+    'm5'
+    'ft'
+    ;
+    grid-template-rows: 10% auto 15%;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+.header5 {
+    grid-area:nv;
+    background-color: #ACB0F2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: #4B50BF solid 10px;
+    width: 100vw;
+}
+
+#main5 {
+    grid-area: m5;
+}
+
+.cartpagetitle {
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: #231773 solid 5px;
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 1em;
+}
+#cartpageicon {
+    width: 3em;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 3em;
+
+}
+#cartpagetitletext {
+    color: #231773;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:bolder;
+    font-size: 30px;
+    margin: 0px;
+}
+#itemsectionimg {
+    width: 6em;
+}
+.itemsection5 {
+    display: flex;
+    
+    align-items: center;
+}
+#itemsectionsubtextbox {
+    display: flex;
+    align-items: center;
+}
+#itemsectionsubtext {
+    padding-right: 5px;
+}
+#itemsectionpricetag {
+    margin-left: 3em;
+    color: #4B50BF;
+    background-color: #ACB0F2;
+    border-radius: 10px;
+    border: #231773 2px solid;
+    padding: 5px;
+}
+#itemsectionline {
+    width: 95vw;
+    height: 0px;
+}
+#cartrest {
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    height: 57vh;
+}
+#checkoutbox {
+    margin-right: 10px;
+    background-color: limegreen;
+    width: 16em;
+    height: 3em;
+    border-radius: 10px;
+    border:#ffffff 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#checkoutarrow {
+    width: 3em;
+}
+
+#HomeIcon5 {
+    width: 3em;
+    margin-left: 10px;
+}
