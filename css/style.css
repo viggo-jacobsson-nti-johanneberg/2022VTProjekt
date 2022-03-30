@@ -2,6 +2,7 @@
 html {
     scroll-behavior: smooth
 }
+
 *{
     @import url(//db.onlinewebfonts.com/c/cfdf18a10f253f0aa9db6db978d328c0?family=SignPainter+HouseScript);
 }
@@ -9,15 +10,14 @@ html {
     text-decoration: none;
     color: inherit;
 }
+
 body {
     margin: 0px;
-    overflow-x: hidden; /* Hide scrollbars */     
+    
+ overflow-x: hidden; /* Hide scrollbars */
+      
 }
 
-
-/*-------------------------------------------------------------
-Page 1: Home
----------------------------------------------------------------*/
 #wrapper {
     display: grid;
     grid-template-areas: 
@@ -29,6 +29,7 @@ Page 1: Home
     max-width: 100vw;
 }
 
+
 .header {
     grid-area:nv;
     background-color: #ACB0F2;
@@ -39,73 +40,33 @@ Page 1: Home
     width: 100vw;
     position: fixed;
 }
+
 #top {
     background-color: transparent;
     border: 0;
     width: 6em;
+
 }
 #HomeIcon {
     width: 5em;
 }
-#Desktop-top {
-    z-index: -1;
-    position: absolute;
-    visibility: hidden;
-    background-color: transparent;
-    border: 0;
-    width: 6em;
-}
-#searchbox {
-    background-color:#777eff;
-    display: flex;
-    align-items: center;
-    height: 40px;
-    border-radius: 5px;
-    padding-left: 3px;
-    padding-right: 5px;
-    visibility: hidden;
-    position: absolute;
-    z-index: -100;
-}
-    
-.typebox {
-    height: 2em;
-    background-color: #8f93e5;
-    padding-top: 10px;
-    margin-right: 1em;
-    width: 50vw;
-    height: 20px;
-    border: 0px;
-    border-radius: 5px;
-    color: #ffffff;
-    resize: none;
-    visibility: hidden;
-    position: absolute;
-    z-index: -100;
-}
-    
-.SearchButton {
-    background-image: url(../img/search_black_24dp.svg);
-    width: 2em;
-    height: 2em;
-    background-repeat:no-repeat;
-    background-size: 2em;
-    border-radius: 5px;
-    visibility: hidden;
-    position: absolute;
-    z-index: -100;
-}
 
+  
 .navlinks li {
     list-style: none;
     padding-top: 3em;
+   
 }
+  
 .navlinks a {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight:bold;
     font-size: 20px;
+   
 }
+  
+  
 .navlinks {
     display:flex;
     flex-direction:column;
@@ -122,6 +83,7 @@ Page 1: Home
     transition: all 0.5s;
     border-left: #4B50BF solid 10px;
 }
+
 .burger div {
     width: 25px;
     height:3px;
@@ -129,41 +91,48 @@ Page 1: Home
     margin:5px;
     border-radius: 25%;
     transition: all 0.3s;
-  
 }
+  
 .burger {
     margin-right: 20px;
     cursor: pointer;
-    position: absolute;
-    right: 20px;
-    z-index: 2;
 }
+
+
+
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
     margin-right: 30px;
     transition: 0.5s;
 }
+  
 .toggle .line2 {
     opacity:0;
     transition: 0.3s;
 }
+  
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
     margin-right: 30px;
     transition: 0.5s;
 }
+  
 .navActive {
     transform: translateX(100vw);
     transition: all 1s;
     position: fixed; 
     box-sizing: unset;
 }
-.search {
+
+#search {
     width: 50px;
 }
+
 #cart {
     width: 50px;
 }
+
+
 .logoBox {
     display: flex;
     flex-direction: column;
@@ -171,15 +140,22 @@ Page 1: Home
     padding: 0px;
     margin-top: 10px;
 }
+
 .logoImage {
     width: 3em;
 }
+
+
+
 #text {
 font-family: "SignPainter HouseScript"; src: url("//db.onlinewebfonts.com/t/cfdf18a10f253f0aa9db6db978d328c0.eot"); src: url("//db.onlinewebfonts.com/t/cfdf18a10f253f0aa9db6db978d328c0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/cfdf18a10f253f0aa9db6db978d328c0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/cfdf18a10f253f0aa9db6db978d328c0.woff") format("woff"), url("//db.onlinewebfonts.com/t/cfdf18a10f253f0aa9db6db978d328c0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/cfdf18a10f253f0aa9db6db978d328c0.svg#SignPainter HouseScript") format("svg");
 font-size: larger;
 margin-top: 0px;
 margin-bottom: 0px;
+
 }
+    
+
 
 .main {
     grid-area: mn;
@@ -188,14 +164,17 @@ margin-bottom: 0px;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+ 
 }
 .itemdiv {
     display: grid;
     grid-template-areas: 
     'i1 i2'
     'i3 i4'
-    'i5 i6';
+    'i5 i6'
+    ;
 }
+
 .shopitems {
     display: flex;
     flex-direction: column;
@@ -203,9 +182,11 @@ margin-bottom: 0px;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 #item1 {
     grid-area: i1;
-    margin-right: 3em;   
+    margin-right: 3em;
+    
 }
 #item2 {
     grid-area: i2;
@@ -227,18 +208,23 @@ margin-bottom: 0px;
     grid-area: i6;
     margin-left: 3em;
 }
+
+
 .guitarimages {
    height: 30vh;
    width: 30vw;
    align-items: center;  
    margin-right: 0px;
 }
+
 #g1 {
     background-image: url(../img/BrownGuitar.jpg);
     background-size: cover;
     background-position-x: center;
-    margin: 0;    
+    margin: 0;
+    
 }
+
 #g2 {
     background-image: url(../img/BlueGuitar.jpg);
     background-size: cover;
@@ -269,24 +255,18 @@ margin-bottom: 0px;
     background-position-x: center;
     margin: 0;
 }
+
+
+
 .productText {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     justify-content:center;
     font-weight: lighter;
 }
-.productPriceText {
-    visibility: hidden;
-    position: absolute;
-    z-index: -100;
-}
+
 .productTextLine {
     width: 6em;
-}
-.productEndLine {
-    position: absolute;
-    visibility: hidden;
-    z-index: -100;
 }
 
 
@@ -295,14 +275,17 @@ margin-bottom: 0px;
     background-color: #4B50BF;
     border-top: #231773 solid 10px;
 }
+
 .footHead {
     list-style-type: none;
     padding: 10px;
     color: #EBEDF2;
     font-size: 20px;
 }
+
 .footHead h3 {
     margin-top: 10px;
+
 }
 .footerheaders {
     display: flex;
@@ -311,8 +294,10 @@ margin-bottom: 0px;
     padding: 0px;
     margin-left: 20px;
     margin-bottom: 0px;
-    margin-block-start: 0px; 
+    margin-block-start: 0px;
+    
 }
+
 .footsub {
     display: flex;
     flex-direction: row;
@@ -323,6 +308,7 @@ margin-bottom: 0px;
     color: #c3c5ca;
     font-size: medium;
 }
+
 
 
 /*-------------------------------------------------------------
@@ -362,7 +348,7 @@ Page 2: Search
     grid-area: m2;
 }
 
-#searchbox2 {
+#searchbox {
 background-color:#777eff;
 display: flex;
 align-items: center;
@@ -372,7 +358,7 @@ padding-left: 3px;
 padding-right: 5px;
 }
 
-.typebox2 {
+.typebox {
     height: 2em;
     background-color: #8f93e5;
     padding-top: 10px;
@@ -382,15 +368,16 @@ padding-right: 5px;
     border: 0px;
     border-radius: 5px;
     color: #ffffff;
-    resize: none;
+    
 }
 
-.SearchButton2 {
+.SearchButton {
     background-image: url(../img/search_black_24dp.svg);
     width: 2em;
     height: 2em;
     background-repeat:no-repeat;
     background-size: 2em;
+    
     border-radius: 5px;
 }
 
@@ -808,213 +795,3 @@ Page 5: Cart
     width: 3em;
     margin-left: 10px;
 }
-
-@media screen and (min-width:480px){
-   
-   /* Medie queuery - Page 1 - Index */
-    #wrapper {
-        display: grid;
-        grid-template-areas: 
-        'nv'
-        'mn'
-        'ft';
-        grid-template-rows: 10vh auto 15%;
-        min-height: 100vh;
-        max-width: 100vw;
-    }
-    .header {
-        grid-area:nv;
-        background-color: #ACB0F2;
-        display: flex;
-        align-items: center;
-        border-bottom: #4B50BF solid 10px;
-        width: 100vw;
-        position: relative;
-    }
-    .burger {
-        visibility: hidden;
-        position: absolute;
-        z-index: -100;
-    }
-    nav {
-        display: flex;
-        align-items: center;
-       justify-content: space-around;
-    }
-    .navActive {
-        transform: unset;
-        border: 0px;
-        position: relative;
-        height: 0vh;
-        display: inline-flex;
-    }
-    .navlinks {
-        position: unset;
-        flex-direction: row;
-        background-color: transparent;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 0em;
-    }
-    .navlinks li {
-        list-style: none;
-        padding-top: 1em;
-    }
-    #Desktop-top {
-        z-index: 0;
-        position: unset;
-        visibility: unset;
-    }
-    #top {
-        visibility: hidden;
-        position: absolute;
-        z-index: -1;
-    }
-    .logoBox {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 12vw;
-        padding-left: 2em;
-    }
-    #logoimage {
-        padding: 40px;
-    }
-    #searchbox {
-    background-color:#777eff;
-    display: flex;
-    align-items: center;
-    height: 40px;
-    border-radius: 5px;
-    padding-left: 3px;
-    padding-right: 5px;
-    visibility: visible;
-    position: unset;
-    z-index: unset;
-    }
-    .typebox {
-    height: 2em;
-    background-color: #8f93e5;
-    padding-top: 10px;
-    margin-right: 1em;
-    width: 50vw;
-    height: 20px;
-    border: 0px;
-    border-radius: 5px;
-    color: #ffffff;
-    resize: none;
-    visibility: visible;
-    position: unset;
-    z-index: unset;
-    } 
-    .SearchButton {
-    background-image: url(../img/search_black_24dp.svg);
-    width: 2em;
-    height: 2em;
-    background-repeat:no-repeat;
-    background-size: 2em;
-    border-radius: 5px;
-    visibility: visible;
-    position: unset;
-    z-index: unset;
-    }
-    .search {
-        visibility: hidden;
-        position: absolute;
-        z-index: -100;
-    }
-    .guitarimages {
-        width: 10vw;
-        margin: 0px;
-        transform: rotate(-90deg);
-        background-size: contain;
-        padding: 0px;
-        background-position: 90 0px;
-    }
-    .shopitems {
-    width: 30vw;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items: center;
-    
-    }
-    .productTextLine {
-        height: 10em;
-        width: 0px;
-        margin: 0px;
-        visibility: hidden;
-        position: absolute;
-        z-index: -100;
-    }
-    .itemdiv {
-        display: grid;
-        grid-template-areas: 
-        'i1 i2 i3'
-        'i4 i5 i6';
-        grid-template-columns: auto auto auto;
-        width: 100vw;
-    }
-    #item1, #item2, #item3, #item4, #item5, #item6 {
-        margin: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .productEndLine {
-        height: 0px;
-        width: 20em;
-        margin: 0px;
-        visibility: visible;
-        position: unset;
-        z-index: unset;
-    }
-    .productPriceText {
-        visibility: visible;
-        position: unset;
-        z-index: unset; 
-        color: #231773;
-    }
-    .productText {
-        font-weight: bolder;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .productTextBox {
-        display: flex;
-        flex-direction: column;
-        width: 6em;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
-    }
-
-    /* Page 3 - Result */
-
-    .resultItems {
-        margin-left: 2em;
-    }
-    .resultBorder {
-        width: 98vw
-    }
-
-    #cart3 {
-        width: 50px;
-        margin-right: 2em;
-    }
-    #navHead2 {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .searchLiHidden {
-        visibility: hidden;
-        position: absolute;
-        z-index: -100;
-    }
-
-}   
