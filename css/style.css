@@ -134,9 +134,7 @@ Page 1: Home
 .burger {
     margin-right: 20px;
     cursor: pointer;
-    position: absolute;
-    right: 20px;
-    z-index: 2;
+   
 }
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
