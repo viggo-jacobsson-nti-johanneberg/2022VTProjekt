@@ -820,6 +820,9 @@ Page 5: Cart
         min-height: 100vh;
         max-width: 100vw;
     }
+    .main {
+        margin-bottom: 5em;
+    }
     .header {
         grid-area:nv;
         background-color: #ACB0F2;
@@ -829,6 +832,7 @@ Page 5: Cart
         width: 100vw;
         position: relative;
     }
+    
     .burger {
         visibility: hidden;
         position: absolute;
