@@ -636,9 +636,7 @@ Page 4: Product
     justify-content: center;
     padding: 5px;
     background-color: limegreen;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
     margin-top: 20px;
     padding-right: 15px;
     border-radius: 1em;
@@ -984,6 +982,7 @@ Page 5: Cart
         position: unset;
         z-index: unset; 
         color: #231773;
+        text-align: center;
     }
     .productText {
         font-weight: bolder;
@@ -1019,4 +1018,23 @@ Page 5: Cart
         z-index: -100;
     }
 
-}   
+  /* Page 4 - Product */
+
+    .header {
+        justify-content: space-evenly;
+    }
+    .productWrap {
+        width: 100vw;
+    }
+    .productitems{
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        height: 50vh;
+    }
+    #productimg {
+        transform: rotate(-90deg);
+        width: 30vw;
+        height: 70vh;
+    }
+}
