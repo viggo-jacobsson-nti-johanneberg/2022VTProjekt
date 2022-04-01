@@ -1025,20 +1025,25 @@ Page 5: Cart
 }
 .productWrap {
     width: 100vw;
+    display: flex;
 }
 .productitems{
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 50vh;
+    align-items: center;
 }
 #productimg {
     transform: rotate(-90deg);
-    width: 30vw;
-    height: 70vh;
+    width: 20vw;
+    height: 60vh;
+    border:groove #4B50BF 10px;
+    border-radius: 10px;
+    
 }
 .productText4 {
-    width: 20vw;   
+    width: 20%;   
 }
 .ProductDesc {
     justify-content:space-between;
@@ -1061,4 +1066,16 @@ Page 5: Cart
     margin-left: 2em;
 
 }
+.colorboxes {
+    width: 100vw;
+    margin-left: 20px;
+}
+
+    /* Page 5 - Cart */
+    #checkoutbox {
+        margin: 2em;
+    }
+    .header5 {
+        justify-content: space-evenly;
+    }
 }   
