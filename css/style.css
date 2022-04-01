@@ -1020,21 +1020,45 @@ Page 5: Cart
 
   /* Page 4 - Product */
 
-    .header {
-        justify-content: space-evenly;
-    }
-    .productWrap {
-        width: 100vw;
-    }
-    .productitems{
-        width: 100vw;
-        display: flex;
-        justify-content: space-evenly;
-        height: 50vh;
-    }
-    #productimg {
-        transform: rotate(-90deg);
-        width: 30vw;
-        height: 70vh;
-    }
+  .header {
+    justify-content: space-evenly;
 }
+.productWrap {
+    width: 100vw;
+}
+.productitems{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+#productimg {
+    transform: rotate(-90deg);
+    width: 30vw;
+    height: 70vh;
+}
+.productText4 {
+    width: 20vw;   
+}
+.ProductDesc {
+    justify-content:space-between;
+    width: 100%;
+}
+#colorboxline {
+    visibility: hidden;
+    position: absolute;
+    z-index: -100;
+}
+#colorboxlineDesktop {
+    visibility: visible;
+    position: unset;
+    z-index: unset;
+    width: 0px;
+    height: 40vh;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    margin-left: 2em;
+
+}
+}   

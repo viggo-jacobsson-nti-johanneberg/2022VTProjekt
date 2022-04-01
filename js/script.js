@@ -28,22 +28,22 @@ function togglecarted() {
 
 
 
-function togglebrown () {
+function togglebrown() {
    document.getElementById("productimg").src = "../img/BrownGuitar.jpg"
 }
-function toggleblue () {
+function toggleblue() {
    document.getElementById("productimg").src = "../img/BlueGuitar.jpg"
 }
-function togglered () {
+function togglered() {
    document.getElementById("productimg").src = "../img/RedGuitar.jpg"
 }
-function togglepurple () {
+function togglepurple() {
    document.getElementById("productimg").src = "../img/PurpleGuitar.jpg"
 }
-function toggleblack () {
+function toggleblack() {
    document.getElementById("productimg").src = "../img/BlackGuitar.jpg"
 }
-function togglewhite () {
+function togglewhite() {
    document.getElementById("productimg").src = "../img/WhiteGuitar.jpg"
 }
 
