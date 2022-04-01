@@ -1070,6 +1070,11 @@ Page 5: Cart
     width: 100vw;
     margin-left: 20px;
 }
+#carttext {
+    color: #ffffff;
+    font-weight: bold;
+    
+}
 
     /* Page 5 - Cart */
     #checkoutbox {
